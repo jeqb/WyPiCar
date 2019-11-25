@@ -1,10 +1,6 @@
-# import RPi.GPIO as GPIO
-# from time import sleep
+import RPi.GPIO as GPIO
+from time import sleep
 
-# pins to control the motor
-motorA = 19
-motorb = 20
-motorEnable = 21
 
 class Car():
 	def __init__(self, **kwargs):
@@ -13,5 +9,18 @@ class Car():
 		self.motor_pin_b = kwargs['motor_pin_b']
 		self.motor_pin_enable = kwargs['motor_pin_enable']
 
-if __name__ == '__main__':
-	some_car = Car()
+		self.setup()
+
+	def __del__(self):
+		# for the garbage collector
+		self.destroy()
+
+	def setup(self):
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(self.motor_pin_a, GPIO.OUT)
+		GPIO.setup(self.motor_pin_b, GPIO.OUT)
+		GPIO.setup(self.motor_pin_enable, GPIO.OUT)
+
+
+	def destroy(self):
+		GPIO.cleanup()
