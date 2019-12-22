@@ -1,2 +1,3 @@
 # WyPicar
-## a Wifi controlled car powerd by Python and Raspberry Pi
+## Control a car from your phone over Wifi.
+## Powered by Python and Raspberry Pi
