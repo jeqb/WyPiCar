@@ -5,10 +5,12 @@
 	<script src="text/javascript"></script>
 </head>
 
+
 <style>
+
 	.main-container{
 		display:flex;
-		margin-left: 15%;
+		margin-left: 10%;
 		margin-right: 10%;
 		margin-top: 8%;
 		margin-bottom: 10%;
@@ -26,31 +28,147 @@
 		align-self: center;
 	}
 
+	.up-arrow{
+		/*positioning*/
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/*interactivity*/
+		cursor: pointer;
+		border-style: solid;
+	}
+
+	.up-arrow:activate{
+		border-color: red;
+	}
+
+	.down-arrow{
+		/*positioning*/
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		/*interactivity*/
+		cursor: pointer;
+		border-style: solid;
+	}
+
+	.left-arrow{
+		cursor: pointer;
+		border-style: solid;
+	}
+
+	.right-arrow{
+		cursor: pointer;
+		border-style: solid;
+	}
 
 </style>
 
+
+<script type="text/javascript">
+
+	function activate_up() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/activate_up';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+	function deactivate_up() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/deactivate_up';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+	function activate_down() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/activate_down';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+	function deactivate_down() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/deactivate_down';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+	function activate_left() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/activate_left';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+	function deactivate_left() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/deactivate_left';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+	function activate_right() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/activate_right';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+	function deactivate_right() {
+		let xhttp = new XMLHttpRequest();
+
+		let url = '/deactivate_right';
+
+		xhttp.open('POST', url);
+		xhttp.send();
+	}
+
+</script>
+
+
 <body>
+	
 	<div>
 		<div class="main-container">
 
 			<div class="left-container">
-				<div class="up-arrow">
-					<img src="/static/up arrow.png" onclick="">
+
+				<div onmousedown="activate_up()" onmouseup="deactivate_up()">
+					<input type="image" src="/static/up arrow.png" class="up-arrow">
 				</div>
 
-				<div class="down-arrow">
-					<img src="/static/down arrow.png">
+				<div onmousedown="activate_down()" onmouseup="deactivate_down()">
+					<input type="image" src="/static/down arrow.png" class="down-arrow">
 				</div>
+
 			</div>
 
 			<div class="right-container">
-				<div class="left-arrow">
-					<img src="/static/left arrow.png">
+
+				<div onmousedown="activate_left()" onmouseup="deactivate_left()">
+					<input type="image" src="/static/left arrow.png" class="left-arrow">
 				</div>
 
-				<div class="right-arrow">
-					<img src="/static/right arrow.png">
+				<div onmousedown="activate_right()" onmouseup="deactivate_right()">
+					<input type="image" src="/static/right arrow.png" class="right-arrow">
 				</div>
+
 			</div>
 
 		</div>
