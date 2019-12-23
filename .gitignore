@@ -2,3 +2,4 @@ __pychache__
 *.pyc
 research
 todo.txt
+debug.py

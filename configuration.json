@@ -1,0 +1,6 @@
+{
+	"motor_pin_a": 19,
+	"motor_pin_b": 20,
+	"motor_pin_enable": 21,
+	"servo_pin": 18
+}
