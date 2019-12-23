@@ -1,0 +1,53 @@
+.main-container{
+	display:flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 8%;
+	margin-bottom: 10%;
+}
+
+.left-container{
+	display:flex;
+	flex: 50%;
+	flex-direction: column;
+}
+
+.right-container{
+	display:flex;
+	flex: 50%;
+	align-self: center;
+}
+
+.up-arrow{
+	/*positioning*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*interactivity*/
+	cursor: pointer;
+	border-style: solid;
+}
+
+.up-arrow:activate{
+	border-color: red;
+}
+
+.down-arrow{
+	/*positioning*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*interactivity*/
+	cursor: pointer;
+	border-style: solid;
+}
+
+.left-arrow{
+	cursor: pointer;
+	border-style: solid;
+}
+
+.right-arrow{
+	cursor: pointer;
+	border-style: solid;
+}
