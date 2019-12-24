@@ -9,57 +9,20 @@
 	<script type="text/javascript" src="{{ url_for('static', filename='functions.js') }}"></script>
 </head>
 
-
-<!--
-<body>
-	
-	<div>
-
-		<div class="main-container">
-
-			<div class="left-container">
-
-				<div onmousedown="activate_up()" onmouseup="deactivate_up()" id="up-arrow">
-					<input type="image" src="/static/up arrow.png" class="up-arrow">
-				</div>
-
-				<div onmousedown="activate_down()" onmouseup="deactivate_down()" id="down-arrow">
-					<input type="image" src="/static/down arrow.png" class="down-arrow">
-				</div>
-
-			</div>
-
-			<div class="right-container">
-
-				<div onmousedown="activate_left()" onmouseup="deactivate_left()" id="left-arrow">
-					<input type="image" src="/static/left arrow.png" class="left-arrow">
-				</div>
-
-				<div onmousedown="activate_right()" onmouseup="deactivate_right()" id="right-arrow">
-					<input type="image" src="/static/right arrow.png" class="right-arrow">
-				</div>
-
-			</div>
-
-		</div>
-		
-	</div>
-
-</body>
--->
-
 <body>
 
 	<div class="main_container">
 
 		<div class="left_container">
 
-			<div id="up_arrow_div">
+			<div id="up_arrow_div"
+				style="display: block; margin-left: auto; margin-right: auto; border-style: solid;">
 				<canvas id="up_arrow" width="100" height="100" class="canvas">
 				Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>
 
-			<div id="down_arrow_div">
+			<div id="down_arrow_div"
+				style="display: block; margin-left: auto; margin-right: auto; border-style: solid;">
 				<canvas id="down_arrow" width="100" height="100" class="canvas">
 				Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>
@@ -68,12 +31,14 @@
 
 		<div class="right_container">
 
-			<div id="left_arrow_div">
+			<div id="left_arrow_div"
+				style="display: block; margin-left: auto; margin-right: auto; border-style: solid;">
 				<canvas id="left_arrow" width="100" height="100" class="canvas">
 				Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>
 
-			<div id="right_arrow_div">
+			<div id="right_arrow_div"
+				style="display: block; margin-left: auto; margin-right: auto; border-style: solid;">
 				<canvas id="right_arrow" width="100" height="100" class="canvas">
 				Your browser does not support the HTML5 canvas tag.</canvas>
 			</div>

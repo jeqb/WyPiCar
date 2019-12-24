@@ -22,26 +22,19 @@
   align-self: center;
 }
 
+
 .up_arrow{
-  /*positioning*/
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /*interactivity*/
   cursor: pointer;
   border-style: solid;
 }
 
-.up_arrow:activate{
-  border-color: red;
-}
-
 .down_arrow{
-  /*positioning*/
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /*interactivity*/
   cursor: pointer;
   border-style: solid;
 }
@@ -52,40 +45,6 @@
 }
 
 .right_arrow{
-  cursor: pointer;
-  border-style: solid;
-}
-
-.up_arrow_div{
-  /*positioning*/
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /*interactivity*/
-  cursor: pointer;
-  border-style: solid;
-}
-
-.up_arrow_div:activate{
-  border-color: red;
-}
-
-.down_arrow_div{
-  /*positioning*/
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /*interactivity*/
-  cursor: pointer;
-  border-style: solid;
-}
-
-.left_arrow_div{
-  cursor: pointer;
-  border-style: solid;
-}
-
-.right_arrow_div{
   cursor: pointer;
   border-style: solid;
 }

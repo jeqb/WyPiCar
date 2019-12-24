@@ -1,4 +1,4 @@
-// look way at the bottom and this will make sense
+// look way at the bottom and this main function will make sense
 const main =()=> {
 
 
@@ -41,6 +41,10 @@ const main =()=> {
 
 	// define the stuff that can happen
 	const activate_up =(ev)=> {
+		// make the border change color
+		document.getElementById('up_arrow_div').style.color = 'red';
+
+		// send the post request to turn the motor on
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/activate_up';
@@ -52,6 +56,10 @@ const main =()=> {
 	
 
 	const deactivate_up =()=> {
+		// make the border change color
+		document.getElementById('up_arrow_div').style.color = 'black';
+
+		// send the post request to turn the motor off
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/deactivate_up';
@@ -63,6 +71,10 @@ const main =()=> {
 
 
 	const activate_down =()=> {
+		// make the border change color
+		document.getElementById('down_arrow_div').style.color = 'red';
+
+		// send the post request to turn the motor on
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/activate_down';
@@ -74,6 +86,10 @@ const main =()=> {
 
 
 	const deactivate_down =()=> {
+		// make the border change color
+		document.getElementById('down_arrow_div').style.color = 'black';
+
+		// send the post request to turn the motor off
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/deactivate_down';
@@ -85,6 +101,10 @@ const main =()=> {
 
 
 	const activate_left =()=> {
+		// make the border change color
+		document.getElementById('left_arrow_div').style.color = 'red';
+
+		// send the post request to move the servo left
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/activate_left';
@@ -96,6 +116,10 @@ const main =()=> {
 
 
 	const deactivate_left =()=> {
+		// make the border change color
+		document.getElementById('left_arrow_div').style.color = 'black';
+
+		// send the post request to move the servo back to neutral
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/deactivate_left';
@@ -107,6 +131,10 @@ const main =()=> {
 
 
 	const activate_right =()=> {
+		// make the border change color
+		document.getElementById('right_arrow_div').style.color = 'red';
+
+		// send the post request to move the servo right
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/activate_right';
@@ -118,6 +146,10 @@ const main =()=> {
 
 
 	const deactivate_right =()=> {
+		// make the border change color
+		document.getElementById('right_arrow_div').style.color = 'black';
+
+		// send the post request to move the servo back to neutral
 		let xhttp = new XMLHttpRequest();
 
 		let url = '/deactivate_right';
