@@ -1,53 +1,91 @@
-.main-container{
-	display:flex;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 8%;
-	margin-bottom: 10%;
+.canvas{
+  border: 1px solid #d3d3d3;
 }
 
-.left-container{
-	display:flex;
-	flex: 50%;
-	flex-direction: column;
+.main_container{
+  display:flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 8%;
+  margin-bottom: 10%;
 }
 
-.right-container{
-	display:flex;
-	flex: 50%;
-	align-self: center;
+.left_container{
+  display:flex;
+  flex: 50%;
+  flex-direction: column;
 }
 
-.up-arrow{
-	/*positioning*/
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/*interactivity*/
-	cursor: pointer;
-	border-style: solid;
+.right_container{
+  display:flex;
+  flex: 50%;
+  align-self: center;
 }
 
-.up-arrow:activate{
-	border-color: red;
+.up_arrow{
+  /*positioning*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*interactivity*/
+  cursor: pointer;
+  border-style: solid;
 }
 
-.down-arrow{
-	/*positioning*/
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/*interactivity*/
-	cursor: pointer;
-	border-style: solid;
+.up_arrow:activate{
+  border-color: red;
 }
 
-.left-arrow{
-	cursor: pointer;
-	border-style: solid;
+.down_arrow{
+  /*positioning*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*interactivity*/
+  cursor: pointer;
+  border-style: solid;
 }
 
-.right-arrow{
-	cursor: pointer;
-	border-style: solid;
+.left_arrow{
+  cursor: pointer;
+  border-style: solid;
+}
+
+.right_arrow{
+  cursor: pointer;
+  border-style: solid;
+}
+
+.up_arrow_div{
+  /*positioning*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*interactivity*/
+  cursor: pointer;
+  border-style: solid;
+}
+
+.up_arrow_div:activate{
+  border-color: red;
+}
+
+.down_arrow_div{
+  /*positioning*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*interactivity*/
+  cursor: pointer;
+  border-style: solid;
+}
+
+.left_arrow_div{
+  cursor: pointer;
+  border-style: solid;
+}
+
+.right_arrow_div{
+  cursor: pointer;
+  border-style: solid;
 }
